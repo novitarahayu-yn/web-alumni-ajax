@@ -8,32 +8,43 @@
 </head>
 <body>
 
-<div class="form-container">
-    <h3>Tambah Data Alumni</h3>
-    <form id="alumniForm">
-        <input type="text" id="name" placeholder="Nama Alumni" required>
-        <input type="text" id="year" placeholder="Tahun Lulus" required>
-        <input type="email" id="email" placeholder="Email (Contoh: name@mail.com)" required>
-        <input type="text" id="whatsapp" placeholder="No WhatsApp (Contoh: 0812...)" required>
-        <button type="submit" id="addBtn">Tambahkan Alumni</button>
-    </form>
+<div class="main-container">
+    <header>
+        <h1 id="main-title">DATABASE ALUMNI UNIKU</h1>
+        <p class="subtitle">Program Studi Sistem Informasi</p>
+    </header>
+
+    <section class="form-section">
+        <h3>Tambah Data Alumni</h3>
+        <form id="alumniForm">
+            <input type="text" id="name" placeholder="Nama Alumni" required>
+            <input type="text" id="year" placeholder="Tahun Lulus" required>
+            <input type="email" id="email" placeholder="Email (Contoh: name@mail.com)" required>
+            <input type="text" id="whatsapp" placeholder="No WhatsApp (Contoh: 0812...)" required>
+            <button type="submit" id="addBtn">Tambahkan Alumni</button>
+        </div>
+            <button type="submit" id="addBtn">Simpan Data Alumni</button>
+        </form>
+    </section>
 </div>
 
 <hr>
 
-<table id="alumniTable">
-    <thead>
-        <tr>
-            <th>Nama Alumni</th>
-            <th>Tahun Lulus</th>
-            <th>Email</th>
-            <th>No WhatsApp</th>
-            <th>Aksi</th>
-        </tr>
-    </thead>
-    <tbody id="hasil_tabel">
-        </tbody>
-</table>
+    <section class="table-section">
+        <table id="alumniTable">
+            <thead>
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <th>Tahun Lulus</th>
+                    <th>Email</th>
+                    <th>WhatsApp</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="hasil_tabel">
+                </tbody>
+        </table>
+    </section>
 </div>
 
 <script src="script.js"></script>
