@@ -8,33 +8,32 @@
 </head>
 <body>
 
-<div class="container">
-    <h1 id="header">Web Data Alumni UNIKU</h1>
-
+<div class="form-container">
+    <h3>Tambah Data Alumni</h3>
     <form id="alumniForm">
         <input type="text" id="name" placeholder="Nama Alumni" required>
         <input type="text" id="year" placeholder="Tahun Lulus" required>
-        <button type="submit">Tambahkan Alumni</button>
+        <input type="email" id="email" placeholder="Email (Contoh: name@mail.com)" required>
+        <input type="text" id="whatsapp" placeholder="No WhatsApp (Contoh: 0812...)" required>
+        <button type="submit" id="addBtn">Tambahkan Alumni</button>
     </form>
-    
-    <hr>
+</div>
 
-    <div class="search-section">
-        <label>Cari Alumni:</label>
-        <input type="text" id="searchAlumni" placeholder="Ketik Nama atau NIM...">
-    </div>
+<hr>
 
-    <table id="alumniTable">
-        <thead>
-            <tr>
-                <th>Nama Alumni</th>
-                <th>Tahun Lulus</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-        <tbody id="hasil_tabel">
-            </tbody>
-    </table>
+<table id="alumniTable">
+    <thead>
+        <tr>
+            <th>Nama Alumni</th>
+            <th>Tahun Lulus</th>
+            <th>Email</th>
+            <th>No WhatsApp</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody id="hasil_tabel">
+        </tbody>
+</table>
 </div>
 
 <script src="script.js"></script>

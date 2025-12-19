@@ -1,42 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif; 
-    margin: 20px; 
-    background-color: #f4f4f4;
+    font-family: 'Inter', sans-serif; 
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333;
 }
 
 .container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
 }
 
-#header {
-    color: #4CAF50; 
-    text-align: center; 
+h1 {
+    color: #2d3436;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 12px 15px;
+    margin: 5px;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    width: 20%; 
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button#addBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button#addBtn:hover {
+    background-color: #45a049; 
+    transform: translateY(-2px);
 }
 
 table {
     width: 100%; 
     border-collapse: collapse; 
-    margin-top: 20px; 
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+    margin-top: 20px;
 }
 
 th {
-    background-color: #f2f2f2; 
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 15px;
 }
 
-button {
-    background-color: #4CAF50; 
-    color: white; 
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #f1f2f6; 
+}
+
+.delete-btn {
+    background-color: #ff7675;
+    color: white;
     border: none;
-    padding: 10px;
-    cursor: pointer;
+    padding: 8px 12px;
     border-radius: 4px;
+    cursor: pointer;
 }
