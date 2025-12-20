@@ -34,6 +34,7 @@
         <table id="alumniTable">
             <thead>
                 <tr>
+                    <th>NIM</th>
                     <th>Nama Lengkap</th>
                     <th>Tahun Lulus</th>
                     <th>Email</th>
